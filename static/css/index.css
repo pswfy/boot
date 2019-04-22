@@ -1,0 +1,166 @@
+/*-----------------------------------------全局-----------------------------------------*/
+body{
+    font-size: 13px;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#000000;
+}
+input::-webkit-input-placeholder{
+    color:#eef4f7;font-size:14px;
+}
+input:-moz-placeholder {
+    color:#eef4f7;font-size:14px;
+}
+input::-moz-placeholder {
+    color:#eef4f7;font-size:14px;
+}
+
+input:-ms-input-placeholder {
+    color:#eef4f7;font-size:14px;
+}
+:-moz-placeholder {
+    color: #000; opacity:0.4;
+}
+
+::-moz-placeholder {
+    color: #000;opacity:0.4;
+}
+
+input:-ms-input-placeholder{
+    color: #000;opacity:0.4;
+}
+
+input::-webkit-input-placeholder{
+    color: #000;opacity:0.4;
+}
+/*-----------------------------------------头部-----------------------------------------*/
+#qd_header{
+
+}
+#qd_header .top-bar{
+    height:30px;
+    background: #eeeeee;
+    line-height:29px;
+}
+#qd_header .top-bar .top-bat-1{
+
+}
+#qd_header .top-bar .top-bat-1 a{
+    text-decoration:none;
+    position: relative;
+}
+#qd_header .top-bar .top-bat-1 a img{
+    display: none;
+    position: absolute;
+    margin-top: -2px;
+    z-index: 9999;
+}
+#qd_header .top-bar .top-bat-1 a:hover img{
+    display: block;
+}
+.title-top{
+    font-size: 12px;
+}
+
+/*-----------------------------------------nav-----------------------------------------*/
+#qd_header .navbar-qb{
+    background: #ffffff;
+    height:70px;
+    margin-bottom: 0;
+}
+#qd_header .navbar-qb .navbar-brand{
+    padding: 24px 20px;
+}
+
+#qd_header .navbar-qb li a{
+    height:70px;
+    line-height: 36px;
+}
+#qd_header .navbar-qb li.active a,#qd_header .navbar-qb li a:hover{
+    background-color: transparent;
+    border-bottom: 2px solid orange;
+}
+#qd_header .navbar-qb .navbar-toggle{
+    margin-top:20px;
+}
+#main li a{
+    height:20px;
+    line-height: 10px;
+}
+/*-----------------------------------------轮播-----------------------------------------*/
+
+/*-----------------------------------------关于-----------------------------------------*/
+.xingxing{
+    padding:2px 2px 10px 2px;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#qd_about{
+    padding: 20px 0;
+}
+#qd_about .row p{
+    line-height: 24px;
+    font-size: 15px;
+}
+/*-----------------------------------------前后数据库-----------------------------------------*/
+#qd_product{
+   /* background: #f0f0f0;*/
+  /* background: #f0f0f0;*/
+    padding:30px 0;
+}
+#qd_product .nav{
+    font-size: 15px;
+}
+#qd_product a{
+    color:#999;
+}
+#qd_product .nav li.active a{
+    border:none;
+    background-color: transparent;
+    border-bottom: 2px solid #0AB4F7;
+    color:#0AB4F7;
+}
+#qd_one_2{
+    background: transparent;
+}
+#qd_one_2 li{
+    background:#f0f0f0;
+}
+#qd_one_2 a{
+    font-size: 16px;
+    background: transparent;
+    color: #8a6d3b;
+}
+/*-----------------------------------------语言排行-----------------------------------------*/
+#qd_hot ul li{
+    display:block;
+    height:40px;
+    line-height: 40px;
+}
+#qd_hot .list-li{
+    height:24px;
+    width:100%;
+}
+#qd_hot .list-li .col-md-3 span{
+    display: inline-block;
+    width:24px;
+    height:24px;
+    color: #ffffff;
+    line-height: 24px;
+    text-align: center;
+}
+/*-----------------------------------------友情链接-----------------------------------------*/
+#qd_link li{
+    display: inline-block;
+}
+/*-----------------------------------------footer-----------------------------------------*/
+#qd_footer ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+#qd_footer ul li a{
+    color: #ffffff;
+}
+
+/*-----------------------------------------注册也面header-----------------------------------------*/

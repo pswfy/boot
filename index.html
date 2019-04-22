@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="static/css/ShadowCss.css">
+    <script src="static/bootstrap/jquery.min.js"></script>
+    <script src="static/bootstrap/bootstrap.js"></script>
+    <script src="static/bootstrap/holder.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <link rel="stylesheet icon" href="static/images/index.png" type="image/x-icon">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_652100_0hmi4nt9uy0j.css">
+    <title>bootstrap</title>
+</head>
+<body style="height:1200px;">
+<!--头部-->
+<header id="qd_header">
+    <div class="row">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-qb">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#qd_nav"
+                            aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="static/images/pswfy.png" style="height:70px;margin-top: -24px;" alt="">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="qd_nav">
+                    <ul class="nav navbar-nav" style="font-size: 16px;">
+                        <li class="active"><a href="#">
+                            <i class="iconfont text-info text-right">&#xe69a;</i>
+                            首页
+                            <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">html5</a></li>
+                        <li><a href="#">css3</a></li>
+                        <li><a href="#">javascript</a></li>
+                        <li><a href="#">jQuery</a></li>
+                        <li><a href="#">bootstrap</a></li>
+                        <li><a href="#">angular</a></li>
+                        <li><a href="#">vue</a></li>
+                        <li><a href="#">react</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs" style="display: none">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">个人中心<span class="caret"></span></a>
+                            <ul class="dropdown-menu" id="main">
+                                <li>头像</li>
+                                <li>信息</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+                        <li class="dropdown">
+                            <a href="login.html" role="button" aria-haspopup="true" aria-expanded="false">登录</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+                        <li class="dropdown">
+                            <a href="register.html" role="button" aria-haspopup="true" aria-expanded="false">注册</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+</header>
+<!--/头部-->
+<!--轮播-->
+<section id="qd_carousel" style="margin-top: 70px;">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="img-responsive " src="static/images/100.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="img-responsive " src="static/images/100.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="img-responsive " src="static/images/100.jpg" alt="">
+            </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <i class="glyphicon glyphicon-chevron-left iconfont icon-qiehuanqizuo" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <i class="glyphicon glyphicon-chevron-right iconfont icon-qiehuanqiyou" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+<!--/轮播-->
+<!--关于-->
+<section id="qd_about" class="hidden-xs hidden-sm">
+    <div class="title text-center">
+        <h3><strong class="text-muted">关于全端</strong></h3>
+        <i class="iconfont img-responsive xingxing" style="font-size: 12px;color: #ececec">&#xe62c;</i>
+        <i class="iconfont img-responsive xingxing" style="font-size: 16px;color: #e0e0e0">&#xe6dc;</i>
+        <i class="iconfont img-responsive xingxing" style="font-size: 12px;color: #ececec">&#xe62c;</i>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <p class="text-muted">前端工程师是互联网时代软件产品研发中不可缺少的一种专业研发角色。从狭义上讲，前端工程师使用 HTML、CSS、JavaScript
+                    等专业技能和工具将产品UI设计稿实现成网站产品，涵盖用户PC端、移动端网页，处理视觉和交互问题。从广义上来讲，所有用户终端产品与视觉和交互有关的部分，都是前端工程师的专业领域。</p>
+                <p class="text-muted">
+                    前端是一个相对比较新的行业，互联网发展早期（1995年~2005年）是没有专业的前端工程师的。随着互联网的发展，大约从2005年开始，正式的前端工程师角色被行业认可，到了2010年，互联网开始全面进入移动时代，前端工程师的地位越来越重要。</p>
+                <p class="text-muted">前端领域的技术发展也越来越快，各种新的思想、设计模式、工具和平台都快速发展，对前端工程师的技能要求也越来越高。</p>
+            </div>
+            <div class="col-md-4 trans-info">
+
+                <div class="trans-main">
+                    <h3>PSWFY</h3>
+                    <p class="trans-main-p-1" id="time_max"></p>
+                    <p class="trans-main-p-2" style="font-size: 6px;" id="time_min">12时16分23秒</p>
+                    <div class="css-node">
+                        <p style="font-size:10px;">NodeJs</p>
+                    </div>
+                    <div class="css-vue">
+                        <p style="font-size:10px;">Vue.js</p>
+                    </div>
+                    <div class="css-html">
+                        <p style="font-size:10px;">html/css</p>
+                    </div>
+                    <div class="css-js">
+                        <p style="font-size:10px;">Javascript</p>
+                    </div>
+                    <div class="css-jq">
+                        <p style="font-size:10px;">jQuery</p>
+                    </div>
+                    <div class="css-pt">
+                        <p style="font-size:10px;">bootstrap</p>
+                    </div>
+                    <div class="css-an">
+                        <p style="font-size:10px;">Angular</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/关于-->
+<!--前后数据库-->
+<section id="qd_product">
+    <div class="container">
+        <div class="row">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                                          data-toggle="tab">全端</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">后端</a>
+                </li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
+                                           data-toggle="tab">数据库</a></li>
+                <li class="pull-right hidden-sm hidden-xs"><a href="#" aria-controls="settings" role="tab"
+                                                              data-toggle="tab" style="font-size: 12px;">更多 <i
+                        class="iconfont text-info text-right">&#xe61f;</i></a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="home">
+                    <div class="row">
+                        <div class="col-md-3 hidden-xs hidden-sm">
+                            <div class="shadow-html">
+                                <img style="padding-top: 30px;" class="img-rounded img-responsive"
+                                     src="static/images/html5.jpg" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-9" style="margin-top: 30px;">
+                            <h3 class="text-warning">HTML5</h3>
+                            <p class="text-muted" style="line-height: 20px;">html5® 万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言。HTML5
+                                是最新的 HTML 标准。HTML5 是专门为承载丰富的 web 内容而设计的，并且无需额外插件。</p>
+                            <button class="btn btn-info">HTML5</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 hidden-xs hidden-sm">
+                            <img style="padding-top: 30px;" class="img-rounded img-responsive"
+                                 src="static/images/css3.jpg" alt="...">
+                        </div>
+                        <div class="col-md-9" style="margin-top: 30px;">
+                            <h3 class="text-warning">CSS3</h3>
+                            <p class="text-muted" style="line-height: 20px;">css3®
+                                CSS是一种叫做样式表（stylesheet）的技术。也有的人称之为层叠样式表（Cascading Stylesheet）。
+                                CSS3.0增加了更多的CSS选择器，可以实现更简单但是更强大的功能。</p>
+                            <button class="btn btn-info">CSS3</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 hidden-xs hidden-sm">
+                            <img style="padding-top: 30px;" class="img-rounded img-responsive"
+                                 src="static/images/javascript.jpg" alt="...">
+                        </div>
+                        <div class="col-md-9" style="margin-top: 30px;">
+                            <h3 class="text-warning">Javascript</h3>
+                            <p class="text-muted" style="line-height: 20px;">Javascript®
+                                JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。</p>
+                            <button class="btn btn-info">Javascript</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 hidden-xs hidden-sm">
+                            <img style="padding-top: 30px;" class="img-rounded img-responsive"
+                                 src="static/images/jQuery.jpg" alt="...">
+                        </div>
+                        <div class="col-md-9" style="margin-top: 30px;">
+                            <h3 class="text-warning">jQuery</h3>
+                            <p class="text-muted" style="line-height: 20px;">jQuery®
+                                jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨是“write
+                                Less，Do
+                                More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优化HTML文档操作、事件处理、动画设计和Ajax交互。</p>
+                            <button class="btn btn-info">jQuery</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 hidden-xs hidden-sm">
+                            <img style="padding-top: 30px;" class="img-rounded img-responsive"
+                                 src="static/images/bootstrap.jpg" alt="...">
+                        </div>
+                        <div class="col-md-9" style="margin-top: 30px;">
+                            <h3 class="text-warning">bootstrap</h3>
+                            <p class="text-muted" style="line-height: 20px;">bootstrap® Bootstrap是美国Twitter公司的设计师Mark
+                                Otto和Jacob Thornton合作基于HTML、CSS、JavaScript 开发的简洁、直观、强悍的前端开发框架，使得 Web 开发更加快捷。</p>
+                            <button class="btn btn-info">bootstrap</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 hidden-xs hidden-sm">
+                            <img style="padding-top: 30px;" class="img-rounded img-responsive"
+                                 src="static/images/vue.jpg" alt="...">
+                        </div>
+                        <div class="col-md-9" style="margin-top: 30px;">
+                            <h3 class="text-warning">Vue</h3>
+                            <p class="text-muted" style="line-height: 20px;">Vue® 是一个构建数据驱动的 web 界面的渐进式框架。Vue.js
+                                的目标是通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件。它不仅易于上手，还便于与第三方库或既有项目整合。</p>
+                            <button class="btn btn-info">Vue</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 hidden-xs hidden-sm">
+                            <img style="padding-top: 30px;" class="img-rounded img-responsive"
+                                 src="static/images/amgular.jpg" alt="...">
+                        </div>
+                        <div class="col-md-9" style="margin-top: 30px;">
+                            <h3 class="text-warning">Angular</h3>
+                            <p class="text-muted" style="line-height: 20px;">Angular® Bootstrap是美国Twitter公司的设计师Mark
+                                Otto和Jacob Thornton合作基于HTML、CSS、JavaScript 开发的简洁、直观、强悍的前端开发框架，使得 Web 开发更加快捷。</p>
+                            <button class="btn btn-info">Angular</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 hidden-xs hidden-sm">
+                            <img style="padding-top: 30px;" class="img-rounded img-responsive"
+                                 src="static/images/react.jpg" alt="...">
+                        </div>
+                        <div class="col-md-9" style="margin-top: 30px;">
+                            <h3 class="text-warning">Rect</h3>
+                            <p class="text-muted" style="line-height: 20px;">Rect® Bootstrap是美国Twitter公司的设计师Mark
+                                Otto和Jacob Thornton合作基于HTML、CSS、JavaScript 开发的简洁、直观、强悍的前端开发框架，使得 Web 开发更加快捷。</p>
+                            <button class="btn btn-info">Rect</button>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="profile">
+                    <div class="row">
+                        <div class="col-md-3 hidden-xs hidden-sm">
+                            <img style="padding-top: 30px;" class="img-responsive img-rounded"
+                                 src="static/images/java.jpg" alt="...">
+                        </div>
+                        <div class="col-md-9" style="margin-top: 30px;">
+                            <h3 class="text-warning">JAVA</h3>
+                            <p class="text-muted" style="line-height: 20px;">java®
+                                Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程。</p>
+                            <button class="btn btn-info">JAVA</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 hidden-xs hidden-sm">
+                            <img style="padding-top: 30px;" class="img-responsive img-rounded"
+                                 src="static/images/node.jpg" alt="...">
+                        </div>
+                        <div class="col-md-9" style="margin-top: 30px;">
+                            <h3 class="text-warning">Nodejs</h3>
+                            <p class="text-muted" style="line-height: 20px;">node.js® 是一个基于 Chrome V8 引擎的 JavaScript
+                                运行时。 Node.js 使用高效、轻量级的事件驱动、非阻塞 I/O 模型。它的包生态系统，npm，是目前世界上最大的开源库生态系统。</p>
+                            <button class="btn btn-info">Nodejs</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 hidden-xs hidden-sm">
+                            <img style="padding-top: 30px;" class="img-responsive img-rounded"
+                                 src="static/images/php.jpg" alt="...">
+                        </div>
+                        <div class="col-md-9" style="margin-top: 30px;">
+                            <h3 class="text-warning">PHP</h3>
+                            <p class="text-muted" style="line-height: 20px;">php®
+                                PHP是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP
+                                独特的语法混合了C、Java、Perl以及PHP自创的语法。</p>
+                            <button class="btn btn-info">PHP</button>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="messages">
+                    <div class="row">
+                        <div class="col-md-3 hidden-xs hidden-sm">
+                            <img style="padding-top: 30px;" class="img-responsive img-rounded"
+                                 src="static/images/mysql.jpg" alt="...">
+                        </div>
+                        <div class="col-md-9" style="margin-top: 30px;">
+                            <h3 class="text-warning">mysql</h3>
+                            <p class="text-muted" style="line-height: 20px;">mysql® MySQL是一个关系型数据库管理系统，由瑞典MySQL AB
+                                公司开发，目前属于 Oracle 旗下产品。MySQL 是最流行的关系型数据库管理系统之一，在 WEB 应用方面，MySQL是最好的 RDBMS (Relational
+                                Database Management System，关系数据库管理系统) 应用软件。</p>
+                            <button class="btn btn-info">mysql</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 hidden-xs hidden-sm">
+                            <img style="padding-top: 30px;" class="img-responsive img-rounded"
+                                 src="static/images/oracle.jpg" alt="...">
+                        </div>
+                        <div class="col-md-9" style="margin-top: 30px;">
+                            <h3 class="text-warning">Oracle</h3>
+                            <p class="text-muted" style="line-height: 20px;">Oracle® Oracle Database，又名Oracle
+                                RDBMS，或简称Oracle。是甲骨文公司的一款关系数据库管理系统。它是在数据库领域一直处于领先地位的产品。可以说Oracle数据库系统是目前世界上流行的关系数据库管理系统，系统可移植性好、使用方便、功能强，适用于各类大、中、小、微机环境。它是一种高效率、可靠性好的
+                                适应高吞吐量的数据库解决方案。</p>
+                            <button class="btn btn-info">Oracle</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 hidden-xs hidden-sm">
+                            <img style="padding-top: 30px;" class="img-responsive img-rounded"
+                                 src="static/images/mongodb.jpg" alt="...">
+                        </div>
+                        <div class="col-md-9" style="margin-top: 30px;">
+                            <h3 class="text-warning">mongodb</h3>
+                            <p class="text-muted" style="line-height: 20px;">mongodb® MongoDB [2]
+                                是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。它支持的数据结构非常松散，是类似json的bson格式，因此可以存储比较复杂的数据类型。Mongo最大的特点是他支持的查询语言非常强大，其语法有点类似于面向对象的查询语言，几乎可以实现类似关系数据库单表查询的绝大部分功能，而且还支持对数据建立索引。</p>
+                            <button class="btn btn-info">mongodb</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/前后数据库-->
+<!--语言排行-->
+<section id="qd_hot">
+    <div class="container">
+        <div class="row">
+            <h3 class="text-center text-muted page-header"><strong>排行榜</strong></h3>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h4 class="text-center text-muted">全端</h4>
+                <ul class="list-unstyled text-left">
+                    <li>
+                        <div class="row list-li">
+                            <div class="col-md-3">
+                                <span style="background: tomato;">1</span>
+                            </div>
+                            <div class="col-md-7 text-center text-warning">Angular</div>
+                            <div class="col-md-2">
+                                <i class="iconfont img-responsive xingxing"
+                                   style="font-size: 16px;color:red">&#xe67b;</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row list-li">
+                            <div class="col-md-3">
+                                <span style="background: tomato;">2</span>
+                            </div>
+                            <div class="col-md-7 text-center text-warning">vue</div>
+                            <div class="col-md-2">
+                                <i class="iconfont img-responsive xingxing" style="font-size: 16px;color:darkgreen">&#xe63d;</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row list-li">
+                            <div class="col-md-3">
+                                <span style="background: tomato;">3</span>
+                            </div>
+                            <div class="col-md-7 text-center text-warning">React</div>
+                            <div class="col-md-2">
+                                <i class="iconfont img-responsive xingxing" style="font-size: 16px;color:darkgreen">&#xe63d;</i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4 class="text-center text-muted">后端</h4>
+                <ul class="list-unstyled text-left">
+                    <li>
+                        <div class="row list-li">
+                            <div class="col-md-3">
+                                <span style="background: tomato;">1</span>
+                            </div>
+                            <div class="col-md-7 text-center text-warning">java</div>
+                            <div class="col-md-2">
+                                <i class="iconfont img-responsive xingxing"
+                                   style="font-size: 16px;color:red">&#xe67b;</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row list-li">
+                            <div class="col-md-3">
+                                <span style="background: tomato;">2</span>
+                            </div>
+                            <div class="col-md-7 text-center text-warning">PHP</div>
+                            <div class="col-md-2">
+                                <i class="iconfont img-responsive xingxing"
+                                   style="font-size: 16px;color:red">&#xe67b;</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row list-li">
+                            <div class="col-md-3">
+                                <span style="background: tomato;">3</span>
+                            </div>
+                            <div class="col-md-7 text-center text-warning">NodeJs</div>
+                            <div class="col-md-2">
+                                <i class="iconfont img-responsive xingxing" style="font-size: 16px;color:darkgreen">&#xe63d;</i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4 class="text-center text-muted">数据库</h4>
+                <ul class="list-unstyled text-left">
+                    <li>
+                        <div class="row list-li">
+                            <div class="col-md-3">
+                                <span style="background: tomato;">1</span>
+                            </div>
+                            <div class="col-md-7 text-center text-warning">mySql</div>
+                            <div class="col-md-2">
+                                <i class="iconfont img-responsive xingxing" style="font-size: 16px;color:darkgreen">&#xe63d;</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row list-li">
+                            <div class="col-md-3">
+                                <span style="background: tomato;">2</span>
+                            </div>
+                            <div class="col-md-7 text-center text-warning">Oracle</div>
+                            <div class="col-md-2">
+                                <i class="iconfont img-responsive xingxing"
+                                   style="font-size: 16px;color:red">&#xe67b;</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row list-li">
+                            <div class="col-md-3">
+                                <span style="background: tomato;">3</span>
+                            </div>
+                            <div class="col-md-7 text-center text-warning">mongoDB</div>
+                            <div class="col-md-2">
+                                <i class="iconfont img-responsive xingxing" style="font-size: 16px;color:darkgreen">&#xe63d;</i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/语言排行-->
+<!--友情链接-->
+<section id="qd_link">
+    <div class="container">
+        <div class="row">
+            <h3 class="text-center text-muted page-header"><strong>友情链接</strong></h3>
+        </div>
+        <ul class="list-unstyled">
+            <li class="col-md-2"><a href="https://cn.vuejs.org/"><img src="static/images/link-vue.jpg" alt=""></a></li>
+            <li class="col-md-2"><img src="static/images/link-react.jpg" alt=""></li>
+            <li class="col-md-2"><img src="static/images/link-node.jpg" alt=""></li>
+            <li class="col-md-2"><img src="static/images/link-bootstrap.jpg" alt=""></li>
+            <li class="col-md-2"><img src="static/images/link-jQuery.jpg" alt=""></li>
+            <li class="col-md-2"><img src="static/images/link-mongodb.jpg" alt=""></li>
+        </ul>
+    </div>
+</section>
+<!--/友情链接-->
+<!--footer-->
+<section id="qd_footer" class="hidden-xs hidden-md">
+    <div style="width:100%;height:150px;background:#2a2730;margin-top: 20px;">
+        <div class="container">
+            <ul class="list-unstyled" style="color:#ffffff;padding-top: 40px;">
+                <li><a href="#">GitHub仓库</a></li>
+                <li><a href="#">实例</a></li>
+                <li><a href="#">优站精选</a></li>
+                <li><a href="#">关于</a></li>
+            </ul>
+            <p class="text-muted">Designed and built with all the love in the world by <span
+                    style="color: #ffffff">@mdo</span> and @fat. Maintained by the core team with the help of our
+                contributors</p>
+            <p class="text-muted">本项目源码受 MIT开源协议保护，文档受 <span style="color: #ffffff">CC BY 3.0 </span>开源协议保护。</p>
+        </div>
+    </div>
+</section>
+<!--/footer-->
+<!--右边固定-精灵图-->
+<!--<div class="toolbar-main hidden-sm hidden-xs">
+    <a href="javascript:void(0)" class="toolbar-item toolbar-item-weixin">
+        <spanPages class="toolbar-layer"></spanPages>
+    </a>
+    <a href="javascript:void(0)" class="toolbar-item toolbar-item-feedback"></a>
+    <a href="javascript:void(0)" class="toolbar-item toolbar-item-app">
+        <spanPages class="toolbar-layer"></spanPages>
+    </a>
+    <a href="javascript:void(0)" class="toolbar-item toolbar-item-top"></a>
+</div>-->
+<!--右边固定-字体图标-->
+<div class="toolbar-main hidden-sm hidden-xs">
+    <a href="javascript:void(0)" class="toolbar-item">
+            <span class="toolbar-btn">
+                 <i class="tooltip-icon iconfont" style="font-size: 30px">&#xe695;</i>
+                <span class="tooltip-text">公众<br>账号</span>
+            </span>
+        <span class="tooltip-layer tooltip-layer-weixin"></span>
+    </a>
+    <a href="javascript:void(0)" class="toolbar-item">
+             <span class="toolbar-btn">
+                <i class="tooltip-icon iconfont" style="font-size: 30px">&#xe638;</i>
+                <span class="tooltip-text">意见<br>反馈</span>
+            </span>
+    </a>
+    <a href="javascript:void(0)" class="toolbar-item">
+             <span class="toolbar-btn">
+                <i class="tooltip-icon iconfont" style="font-size: 30px">&#xe636;</i>
+                <span class="tooltip-text">App<br>下载</span>
+            </span>
+        <span class="tooltip-layer tooltip-layer-app"></span>
+    </a>
+    <a href="javascript:void(0)" class="toolbar-item">
+             <span class="toolbar-btn">
+                <i class="tooltip-icon iconfont" style="font-size: 30px">&#xe635;</i>
+                <span class="tooltip-text">返回<br>顶部</span>
+            </span>
+    </a>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/*过渡动画*/
+/*缩放*/
+/*中心点*/
+/*透明度*/
+/*CSS3 径向渐变*/
+/*屏幕旋转字体大小不不变*/
+/*字体设置*/
+/*默认样式移除*/
+/*伪类*/
+html {
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none; }
+
+a.link, a:visited, a:focus {
+  text-decoration: none;
+  outline: none; }
+
+.mongodb-nav {
+  width: 100%;
+  height: 160px;
+  background: #47c9af;
+  color: #74777b;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Arial","Arial","Helvetica","Microsoft YaHei","SimHei","SimSun"; }
+  .mongodb-nav a.link, .mongodb-nav a:visited, .mongodb-nav a:focus {
+    text-decoration: none;
+    outline: none; }
+  .mongodb-nav *, .mongodb-nav *:after, .mongodb-nav *:before {
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .mongodb-nav *:after, .mongodb-nav *:before {
+    display: block;
+    content: ""; }
+  .mongodb-nav *:after {
+    clear: both; }
+
+.mongodb-ul {
+  height: 100%;
+  display: block;
+  width: 90%;
+  margin: 0 auto; }
+
+.mongodb-ul li {
+  display: inline-block;
+  margin: 0 1em;
+  text-align: left;
+  margin-top: 100px; }
+
+/*# sourceMappingURL=momgodb.css.map */

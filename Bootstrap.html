@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/bootstrap/bootstrap.css">
+    <script src="static/bootstrap/jquery.min.js"></script>
+    <script src="static/bootstrap/bootstrap.js"></script>
+    <script src="static/bootstrap/holder.min.js"></script>
+    <title>Bootstrap</title>
+</head>
+<body>
+<!--删格系统-->
+<!--container居中-->
+<!--container-fluid 100%-->
+<div class="container">
+    <h1 class="page-header text-center">Bootstrap</h1>
+    <!--删格系统-->
+    <!--xs:小于768px-->
+    <!--sm:768px到970px-->
+    <!--md:970px到1200px-->
+    <!--lg:大于1200px-->
+    <!-- 默认15px内边距-->
+    <!-- row:一行-->
+    <!--col-md-offset-3:左偏移3个位置-->
+    <!--  <img src="holder.js/100px200">:高度200px,100%宽-->
+    <h3 class="page-header">删格系统</h3>
+    <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <img src="holder.js/100px263">
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <img src="holder.js/100px263">
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <img src="holder.js/100px263">
+        </div>
+        <div class="col-md-3 hidden-sm col-sm-4 col-xs-12">
+            <img src="holder.js/100px263">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <img src="holder.js/100px200">
+        </div>
+        <div class="col-md-3">
+            <img src="holder.js/100px200">
+        </div>
+        <div class="col-md-offset-3 col-md-3">
+            <img src="holder.js/100px200">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="holder.js/100px200">
+        </div>
+        <div class="col-md-6">
+            <img src="holder.js/100px200">
+        </div>
+    </div>
+    <!--col-md-push-3：改变顺序-->
+    <!-- col-md-pull-9：改变顺序-->
+    <!--pull-right:浮动-->
+    <!-- pull-left:浮动-->
+    <!--clearfix：清除清除浮动，-->
+    <div class="row">
+        <div class="col-md-9 col-md-push-3">1<img src="holder.js/100px200"></div>
+        <div class="col-md-3 col-md-pull-9">2<img src="holder.js/100px200"></div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-3 pull-left"><img src="holder.js/100px200"></div>
+        <div class="col-md-3 pull-left"><img src="holder.js/100px200"></div>
+        <div class="col-md-3"><img src="holder.js/100px200"></div>
+        <div class="col-md-3"><img src="holder.js/100px200"></div>
+    </div>
+    <h3 class="page-header">排版</h3>
+    <!--
+    1.标题page-headers
+    2.删格
+    3.排版
+    4.段落lead
+    5.mark标记
+    6.删除线del
+    7.无用文本
+    8.下划线
+    9.小号字体small
+    10.文本对齐
+    11.列表
+    12.无样式列表
+    13.内联列表
+    14.自定义列表
+    15.代码块
+    16.变量
+    17.程序输出
+    18.表格
+
+    -->
+    <!--4.段落lead-->
+    <div class="row">
+        <p class="lead">
+            1.标题page-header<br>
+            2.删格<br>
+            3.排版<br>
+            4.段落lead<br>
+            5.mark标记<br>
+            6.删除线del<br>
+            7.无用文本<br>
+            8.下划线<br>
+            9.小号字体small<br>
+            10.文本对齐<br>
+            11.列表<br>
+            12.无样式列表<br>
+            13.内联列表<br>
+            14.描述自定义列表<br>
+            15.代码块<br>
+            16.变量<br>
+            17.程序输出<br>
+            18.表格
+        </p>
+    </div>
+    <!--5.mark标记-->
+    <div class="row">
+        <h3 class="page-header">5.mark
+            <small>标记</small>
+        </h3>
+        <p>dhssjdsk
+            <mark>33333</mark>
+            djskldjsdjs
+        </p>
+    </div>
+    <!--6.删除线del-->
+    <div class="row">
+        <h3 class="page-header">5.del
+            <small>删除线</small>
+        </h3>
+        <p>dhssjdsk
+            <del>33333</del>
+            djskldjsdjs
+        </p>
+    </div>
+    <!--6.删除线del-->
+    <div class="row">
+        <h3 class="page-header">6.small
+            <small>小号字体</small>
+        </h3>
+        <p>dhssjdsk
+            <small>33333</small>
+            djskldjsdjs
+        </p>
+    </div>
+    <!--6.文本对齐text-xxx-->
+    <div class="row">
+        <h3 class="page-header">6.text-xxx
+            <small>文本对齐</small>
+        </h3>
+        <p class="text-center">text-center</p>
+        <p class="text-left">text-left</p>
+        <p class="text-right">text-right</p>
+        <p class="text-justify">text-justifytext-justifytext-justifytext-justifytext-justifytext-justify
+            text-justifytext-justifytext-justifytext-justifytext-justifytext-justify
+            text-justifytext-justifytext-justifytext-justifytext-justifytext-justifytext-justify
+            text-justifytext-justifytext-justifytext-justifytext-justify
+            text-justifytext-justifytext-justifytext-justifytext-justifytext-justify
+            text-justifytext-justifytext-justifytext-justifytext-justifytext-justify
+            text-justifytext-justifytext-justifytext-justifytext-justifytext-justifytext-justify
+            text-justifytext-justifytext-justifytext-justifytext-justify</p>
+    </div>
+    <!--7.文本大小写-->
+    <div class="row">
+        <h3 class="page-header">text-lowercase
+            <small>小写</small>
+        </h3>
+        <p class="text-lowercase">text-lowercase</p>
+    </div>
+    <div class="row">
+        <h3 class="page-header">text-uppercase
+            <small>大写</small>
+        </h3>
+        <p class="text-uppercase">text-uppercase</p>
+    </div>
+    <div class="row">
+        <h3 class="page-header">text-capitalize
+            <small>首字大写</small>
+        </h3>
+        <p class="text-capitalize">text-capitalize</p>
+    </div>
+    <!--12.无样式列表-->
+    <div class="row">
+        <h3 class="page-header">list-unstyled
+            <small>无样式列表</small>
+        </h3>
+        <ul class="list-unstyled">
+            <li>list-unstyled</li>
+            <li>list-unstyled</li>
+        </ul>
+    </div>
+   <!-- 14.自定义列表-->
+    <div class="row">
+        <h3 class="page-header">dl-horizontal
+            <small>自定义列表</small>
+        </h3>
+       <dl class="dl-horizontal">
+           <dt>水平自定义列表</dt>
+           <dd>dl-horizontal</dd>
+           <dd>dl-horizontal</dd>
+           <dd>dl-horizontal</dd>
+           <dd>dl-horizontal</dd>
+       </dl>
+    </div>
+    <div class="row">
+        <h3 class="page-header">text-overflow
+            <small>自定义列表</small>
+        </h3>
+        <div class="text-overflow">
+            <dl class="text-over">
+                <dt>水平自定义列表</dt>
+                <dd>dl-horizontal</dd>
+                <dd>dl-horizontal</dd>
+                <dd>dl-horizontal</dd>
+                <dd>dl-horizontal</dd>
+            </dl>
+        </div>
+    </div>
+    <!--15.代码块-->
+    <div class="row">
+        <h3 class="page-header">code
+            <small>代码</small>
+        </h3>
+       <p><code>code</code>djdjdjdjdjdjdj</p>
+    </div>
+    <!--15.原格式输出-->
+    <div class="row">
+        <h3 class="page-header">pre
+            <small>原格式输出</small>
+        </h3>
+        <pre>
+            for(let i=0;i<20;i++){
+                console.log(i);
+            }
+        </pre>
+    </div>
+    <!--15.键盘-->
+    <div class="row">
+        <h3 class="page-header">kbd
+            <small>键盘</small>
+        </h3>
+        <p>kbdkbdkb <kbd>按ctrl+shift</kbd> dkbdkbdkbdkbdkbdkbdkbdkbdkbdkbdkbdkbdkbdkbd</p>
+    </div>
+    <!--15.变量-->
+    <div class="row">
+        <h3 class="page-header">var
+            <small>变量</small>
+        </h3>
+        <p><var>let a=12</var></p>
+        <p><var>let b=10</var></p>
+    </div>
+    <!--表格-->
+    <div class="row">
+        <h3 class="page-header">table<small>表格</small></h3>
+        <table class="table table-striped table-bordered table-hover table-condensed">
+            <tr class="text-danger">
+                <th>ID</th>
+                <th>用户名</th>
+                <th>ID</th>
+                <th>用户名</th>
+                <th>密码</th>
+                <th>密码</th>
+            </tr>
+            <tr class="text-warning">
+                <td>ID</td>
+                <td>用户名2222222222222</td>
+                <td>密码</td>
+                <td>ID</td>
+                <td>用户名</td>
+                <td>密码</td>
+            </tr>
+            <tr class="text-info">
+                <td>ID</td>
+                <td>用户名</td>
+                <td>密码</td>
+                <td>ID</td>
+                <td>用户名</td>
+                <td>密码</td>
+            </tr>
+            <tr class="text-success">
+                <td>ID</td>
+                <td>用户名</td>
+                <td>密码</td>
+                <td>ID</td>
+                <td>用户名</td>
+                <td>密码</td>
+            </tr>
+            <tr class="text-active">
+                <td>ID</td>
+                <td>用户名</td>
+                <td>密码</td>
+                <td>ID</td>
+                <td>用户名</td>
+                <td>密码</td>
+            </tr>
+            <tr class="text-danger">
+                <td>ID</td>
+                <td>用户名</td>
+                <td>密码</td>
+                <td>ID</td>
+                <td>用户名</td>
+                <td>密码</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

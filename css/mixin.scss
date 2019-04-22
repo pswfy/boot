@@ -1,0 +1,76 @@
+/*过渡动画*/
+@mixin transition($transition){
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+/*缩放*/
+@mixin scale($scale){
+  -webkit-transform: scale($scale);
+  -moz-transform: scale($scale);
+  -ms-transform: scale($scale);
+  -o-transform: scale($scale);
+  transform: scale($scale);
+}
+/*中心点*/
+@mixin transform-origin($origin){
+  -webkit-transform-origin:$origin;
+  -moz-transform-origin:$origin;
+  -ms-transform-origin:$origin;
+  -o-transform-origin:$origin;
+  transform-origin:$origin;
+}
+/*透明度*/
+@mixin opacity($opacity){
+  opacity:$opacity;
+  filter: alpha(opacity=$opacity * 100);
+}
+/*CSS3 径向渐变*/
+@mixin radialGradient($a,$b,$c){
+  background: -webkit-radial-gradient($a,$b,$c);
+  background: -o-radial-gradient($a,$b,$c);
+  background: -moz-radial-gradient($a,$b,$c);
+  background: radial-gradient($a,$b,$c);
+}
+/*屏幕旋转字体大小不不变*/
+@mixin adjust-size(){
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none;
+
+}
+/*字体设置*/
+@mixin family(){
+  font-family: "Arial","Arial","Helvetica","Microsoft YaHei","SimHei","SimSun";
+}
+/*默认样式移除*/
+@mixin a-decoration(){
+  a.link,a:visited,a:focus{
+    text-decoration: none;
+    outline: none;
+  }
+}
+/*伪类*/
+@mixin after-before(){
+  *,*:after,*:before{
+    -webkit-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+  }
+  *:after,*:before{
+    display: block;
+    content: "";
+  }
+  *:after{
+    clear: both;
+  }
+}
+
+
+

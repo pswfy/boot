@@ -1,0 +1,32 @@
+@import "mixin";
+html{
+  @include adjust-size()
+}
+a.link,a:visited,a:focus{
+  text-decoration: none;
+  outline: none;
+}
+.mongodb-nav{
+  width: 100%;
+  height:160px;
+  background: #47c9af;
+  color: #74777b;;
+  font-weight: 700;
+  font-size: 16px;
+  @include family();
+  @include a-decoration();
+  @include after-before()
+}
+.mongodb-ul{
+  height: 100%;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+
+}
+.mongodb-ul li{
+  display: inline-block;
+  margin: 0 1em;
+  text-align: left;
+  margin-top: 100px;
+}

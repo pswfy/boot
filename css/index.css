@@ -1,0 +1,407 @@
+@charset "UTF-8";
+/*过渡动画*/
+/*缩放*/
+/*中心点*/
+/*透明度*/
+/*CSS3 径向渐变*/
+/*屏幕旋转字体大小不不变*/
+/*字体设置*/
+/*默认样式移除*/
+/*伪类*/
+/*精灵图*/
+/*@mixin toolbar-item($pos,$hover){
+  background-position:0 $pos;
+  &:hover{
+    background-position:0 $hover;
+
+  }
+}
+$toolbar-size:52px;
+.toolbar-item , .toolbar-layer{
+  background-image: url("../static/images/toolbar.png");
+  background-repeat: no-repeat;
+}
+.toolbar-main{
+  position: fixed;
+  right:0;
+  bottom:5px;
+
+}
+.toolbar-item {
+  position: relative;
+  display: block;
+  width:$toolbar-size;
+  height:$toolbar-size;
+  margin-top: 1px;
+  @include transition(all .5s);
+  &:hover{
+    .toolbar-layer{
+      @include opacity(1);
+      @include scale(1);
+    }
+  }
+}
+.toolbar-item-weixin{
+  @include toolbar-item(-798px,-860px);
+  .toolbar-layer{
+    height:212px;
+    background-position: 0 0;
+  }
+}
+
+.toolbar-item-feedback{
+  @include toolbar-item(-426px,-488px);
+}
+
+.toolbar-item-app{
+  @include toolbar-item(-550px,-612px);
+  .toolbar-layer{
+    height:194px;
+    background-position: 0 -222px;
+  }
+}
+.toolbar-item-top{
+  @include toolbar-item(-674px,-736px);
+}
+.toolbar-layer{
+  position: absolute;
+  right:$toolbar-size - 6;
+  bottom: -10px;
+  width:172px;
+  @include opacity(0);
+  @include transform-origin(95% 95%);
+  @include scale(0.01);
+  @include transition(all .5s);
+}*/
+/*字体图标*/
+.toolbar-main {
+  position: fixed;
+  right: 0;
+  bottom: 5px; }
+
+.toolbar-item {
+  position: relative;
+  display: block;
+  width: 52px;
+  height: 52px;
+  margin-top: 1px; }
+  .toolbar-item:hover .tooltip-icon {
+    top: -52px; }
+  .toolbar-item:hover .tooltip-text {
+    top: 0; }
+  .toolbar-item:hover .tooltip-layer {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); }
+
+.toolbar-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  -webkit-transition: top 0.5s;
+  -moz-transition: top 0.5s;
+  -ms-transition: top 0.5s;
+  -o-transition: top 0.5s;
+  transition: top 0.5s; }
+
+.tooltip-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 52px;
+  height: 52px;
+  background-color: #d0d6d9;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 52px;
+  -webkit-transition: top 0.5s;
+  -moz-transition: top 0.5s;
+  -ms-transition: top 0.5s;
+  -o-transition: top 0.5s;
+  transition: top 0.5s; }
+
+.tooltip-text {
+  position: absolute;
+  left: 0;
+  top: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #98a1a6;
+  padding-top: 12px;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.2;
+  -webkit-transition: top 0.5s;
+  -moz-transition: top 0.5s;
+  -ms-transition: top 0.5s;
+  -o-transition: top 0.5s;
+  transition: top 0.5s; }
+
+.tooltip-layer {
+  position: absolute;
+  right: 46px;
+  bottom: -10px;
+  width: 172px;
+  background-image: url("../static/images/toolbar_img.png");
+  background-repeat: no-repeat;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform-origin: 95% 95%;
+  -moz-transform-origin: 95% 95%;
+  -ms-transform-origin: 95% 95%;
+  -o-transform-origin: 95% 95%;
+  transform-origin: 95% 95%;
+  -webkit-transform: scale(0.01);
+  -moz-transform: scale(0.01);
+  -ms-transform: scale(0.01);
+  -o-transform: scale(0.01);
+  transform: scale(0.01);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.tooltip-layer-weixin {
+  height: 212px;
+  background-position: 0 0; }
+
+.tooltip-layer-app {
+  height: 194px;
+  background-position: 0 -222px; }
+
+/*全端介绍动画*/
+/*css3旋转 */
+.trans-info {
+  width: 380px;
+  height: 220px;
+  background: -webkit-radial-gradient(#20283f, #1a2134, #192033);
+  background: -o-radial-gradient(#20283f, #1a2134, #192033);
+  background: -moz-radial-gradient(#20283f, #1a2134, #192033);
+  background: radial-gradient(#20283f, #1a2134, #192033);
+  border-radius: 10px;
+  position: relative; }
+
+.trans-main {
+  position: absolute;
+  margin: 0 auto; }
+
+.trans-main h3 {
+  position: absolute;
+  color: #ffffff;
+  margin-left: 130px; }
+
+.trans-main-p-1 {
+  width: 200px;
+  height: 50px;
+  /*background: red;*/
+  font-size: 10px;
+  position: absolute;
+  color: #ffffff;
+  top: 50px;
+  left: 120px; }
+
+.trans-main-p-2 {
+  width: 200px;
+  height: 50px;
+  /*background: red;*/
+  font-size: 6px;
+  position: absolute;
+  color: #ffffff;
+  top: 70px;
+  left: 130px; }
+
+.css-node {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: #ff5e5f;
+  height: 50px;
+  width: 50px;
+  color: #ffffff;
+  line-height: 50px;
+  text-align: center;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg); }
+
+.css-node p {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  position: absolute;
+  top: 15px;
+  left: 5px; }
+
+.css-vue {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  background: #ff992b;
+  height: 50px;
+  width: 50px;
+  color: #ffffff;
+  line-height: 50px;
+  text-align: center;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg); }
+
+.css-vue p {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+
+.css-html {
+  position: absolute;
+  top: 110px;
+  left: 110px;
+  background: #bce91a;
+  height: 50px;
+  width: 50px;
+  color: #ffffff;
+  line-height: 50px;
+  text-align: center;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg); }
+
+.css-html p {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  position: absolute;
+  top: 10px;
+  left: 1px; }
+
+.css-js {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  background: #19c938;
+  height: 50px;
+  width: 50px;
+  color: #ffffff;
+  line-height: 50px;
+  text-align: center;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg); }
+
+.css-js p {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  position: absolute;
+  top: 12px;
+  left: -1px; }
+
+.css-jq {
+  position: absolute;
+  top: 110px;
+  left: 190px;
+  background: #2edfef;
+  height: 50px;
+  width: 50px;
+  color: #ffffff;
+  line-height: 50px;
+  text-align: center;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg); }
+
+.css-jq p {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  position: absolute;
+  top: 15px;
+  left: 6px; }
+
+.css-pt {
+  position: absolute;
+  top: 70px;
+  left: 230px;
+  background: #5c66ea;
+  height: 50px;
+  width: 50px;
+  color: #ffffff;
+  line-height: 50px;
+  text-align: center;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg); }
+
+.css-pt p {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  position: absolute;
+  top: 14px;
+  left: -1px; }
+
+.css-an {
+  position: absolute;
+  top: 30px;
+  left: 270px;
+  background: #e154de;
+  height: 50px;
+  width: 50px;
+  color: #ffffff;
+  line-height: 50px;
+  text-align: center;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg); }
+
+.css-an p {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  position: absolute;
+  top: 10px;
+  left: 5px; }
+
+/*nav*/
+
+/*# sourceMappingURL=index.css.map */
